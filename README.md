@@ -60,4 +60,8 @@ nf-core, version 3.2.0
 
 ```
 
+```bash
+nextflow run main.nf --input ./test/samplesheet.csv --email gyftang@gmail.com --outdir ./bactonomy_output -c nextflow.config -profile conda --fasta ~/Desktop/bactonomy/test/Helicobacter_pylori_NCTC_11637.fasta
+```
+
 
