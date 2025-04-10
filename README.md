@@ -6,9 +6,9 @@
 - [Pre-Requisites]()
 
 ### Testing Parameters
-Name: Yifan (Grace) Tang \n
-GT usr: ytang370 \n
-Package Manager: Conda 24.11.3 \n
+Name: Yifan (Grace) Tang
+GT usr: ytang370
+Package Manager: Conda 24.11.3
 OS architecture:
 ```shell
 Darwin Graces-MacBook-Pro.local 24.3.0 Darwin Kernel Version 24.3.0: Thu Jan  2 20:24:24 PST 2025; root:xnu-11215.81.4~3/RELEASE_ARM64_T6030 arm6
