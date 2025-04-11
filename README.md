@@ -37,11 +37,13 @@ In order to set-up a _minimal_ version of `Nextflow` and `nf-core` locally follo
 
 ```shell
 nextflow run main.nf \
-  --input ./test_data_ce/samplesheet.csv \
-  --outdir ./bactonomy_output \
+  --input ./input/samplesheet.csv \
+  --outdir ./output \
   -c nextflow.config \
   -profile docker \
-  --fasta ~/Desktop/bactonomy/test_data_ce/Candidatus_Electrothrix_gigas_AW2.fasta
+  --fasta <replace with full working directory>/input/Candidatus_Electrothrix_gigas_AW2.fasta \
+  -with-dag ./output/flowchart.svg \
+  -with-timeline
 ```
 
 4. This will generate all outputs for each module (process) within the `output` directory 
