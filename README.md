@@ -3,8 +3,9 @@
 
 > A complete and well-integrated pipeline to run bacterial taxonomy using `Nextflow` and `nf-core`
 
-- [Local Environment]()
-- [Pre-Requisites]()
+- [Local Environment](https://github.com/yifan-grace-tang/nextflow-bactonomy/blob/main/README.md#local-environment)
+- [Pre-Requisites](https://github.com/yifan-grace-tang/nextflow-bactonomy/blob/main/README.md#pre-requisites)
+- [Getting Started](https://github.com/yifan-grace-tang/nextflow-bactonomy/blob/main/README.md#getting-started)
 
 ### Local Environment
 
@@ -30,8 +31,19 @@ In order to set-up a _minimal_ version of `Nextflow` and `nf-core` locally follo
 
 1. Start by cloning this repo and entering the working directory using `git clone https://github.com/yifan-grace-tang/nextflow-bactonomy && cd nextflow-bactonomy`.
 
-2. Afterwards populate the required inputs 
+2. Afterwards populate the required inputs within the `bactonomy-input` folder, for testing purposes we have pre-populated the folder with all the required inputs.
 
+3. Now you can simply run the workflow with (assuming you have the `docker daemon` running else use `-profile conda`:
 
+```shell
+nextflow run main.nf \
+  --input ./input/samplesheet.csv \
+  --outdir ./output \
+  -c nextflow.config \
+  -profile docker \
+  --fasta <replace with full working directory>/input/Candidatus_Electrothrix_gigas_AW2.fasta \
+  -with-dag ./output/flowchart.svg \
+  -with-timeline
+```
 
-
+4. This will generate all outputs for each module (process) within the `output` directory 
