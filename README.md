@@ -46,11 +46,17 @@ In order to set-up a _minimal_ version of `Nextflow` and `nf-core` locally follo
 
 > These steps assume you have already clone this repository with `git clone https://github.com/yifan-grace-tang/nextflow-bactonomy`
 
-1. Enter the working directory of the repository with `cd nextflow-bactonomy`
+1. Enter the working directory of the repository with
+```shell
+cd nextflow-bactonomy`
+```
 
-2. Store your file directory information with `BASEDIR=$(pwd)`
+3. Store your file directory information with
+```shell
+BASEDIR=$(pwd)
+```
 
-3. Now you can simply run the workflow with (assuming you have the `docker daemon` running else use `-profile conda`:
+5. Now you can simply run the workflow with (assuming you have the `docker daemon` running else use `-profile conda`:
 
 ```shell
 nextflow run main.nf \
