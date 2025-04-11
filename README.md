@@ -1,6 +1,8 @@
 <img src="https://avatars.githubusercontent.com/u/6698688?s=280&v=4" align="left" width="80px"/>
 <h1> <code>Nextflow</code> Bactonomy </h1>
 
+![Docker](https://img.shields.io/badge/docker-%230db7ed.svg?style=for-the-badge&logo=docker&logoColor=white)
+![Anaconda](https://img.shields.io/badge/Anaconda-%2344A833.svg?style=for-the-badge&logo=anaconda&logoColor=white)
 > A complete and well-integrated pipeline to run bacterial taxonomy using `Nextflow` and `nf-core`
 
 - [Local Environment](https://github.com/yifan-grace-tang/nextflow-bactonomy/blob/main/README.md#local-environment)
