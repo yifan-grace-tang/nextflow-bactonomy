@@ -30,7 +30,13 @@ In order to set-up a _minimal_ version of `Nextflow` and `nf-core` locally follo
 
 1. Start by cloning this repo and entering the working directory using `git clone https://github.com/yifan-grace-tang/nextflow-bactonomy && cd nextflow-bactonomy`.
 
-2. Afterwards populate the required inputs 
+2. Afterwards populate the required inputs within the `bactonomy-input` folder, for testing purposes we have pre-populated the folder with all the required inputs.
+
+3. Now you can simply run the workflow with:
+
+```shell
+echo $FINISH_THIS
+````
 
 
 
