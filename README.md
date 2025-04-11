@@ -64,7 +64,8 @@ nextflow run main.nf \
 
 - phylogenetic `.treefile` file from `IQ-TREE` located in `outputs/iqtree`
 
-During executation the console will log the current status as will as metrics after all processes are complete:
+<br/>
+NOTE: During executation the console will log the current status as will as metrics after all processes are complete:
 
 ```shell
 executor >  local (53)
