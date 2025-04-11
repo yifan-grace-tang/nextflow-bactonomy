@@ -35,9 +35,11 @@ In order to set-up a _minimal_ version of `Nextflow` and `nf-core` locally follo
 3. Now you can simply run the workflow with:
 
 ```shell
-echo $FINISH_THIS
+nextflow run main.nf \
+  --input ./test_data_ce/samplesheet.csv \
+  --outdir ./bactonomy_output \
+  -c nextflow.config \
+  -profile conda \
+  --fasta ~/Desktop/bactonomy/test_data_ce/Candidatus_Electrothrix_gigas_AW2.fasta
 ````
-```shell
-nextflow run main.nf --input ./test_data_ce/samplesheet.csv --email gyftang@gmail.com --outdir ./bactonomy_output -c nextflow.config -profile conda --fasta ~/Desktop/bactonomy/test_data_ce/Candidatus_Electrothrix_gigas_AW2.fasta
-```
 
