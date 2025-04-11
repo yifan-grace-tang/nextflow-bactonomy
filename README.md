@@ -56,7 +56,13 @@ nextflow run main.nf \
   -with-timeline
 ```
 
-4. This will generate all outputs for each module (process) within the `output` directory the final `.treefile` file from `IQ-TREE` is located in `outputs/iqtree`
+4. This will generate all outputs for each module (process) within the `output` directory:
+
+- assembly `.svg` and `.png` files from `bandage` located in `outputs/bandage`
+
+- comparison `.txt` files from `FastANI` located in `outputs/fastani`
+
+- phylogenetic `.treefile` file from `IQ-TREE` located in `outputs/iqtree`
 
 During executation the console will log the current status as will as metrics after all processes are complete:
 
