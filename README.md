@@ -29,20 +29,22 @@ In order to set-up a _minimal_ version of `Nextflow` and `nf-core` locally follo
 
 ### Getting Started
 
-1. Start by cloning this repo and entering the working directory using `git clone https://github.com/yifan-grace-tang/nextflow-bactonomy && cd nextflow-bactonomy`.
+> These steps assume you have already clone this repository with `git clone https://github.com/yifan-grace-tang/nextflow-bactonomy`
 
-2. Afterwards populate the required inputs within the `bactonomy-input` folder, for testing purposes we have pre-populated the folder with all the required inputs.
+1. Enter the working directory of the repository with `cd nextflow-bactonomy`
+
+2. Store your file directory information with `BASEDIR=$(pwd)`
 
 3. Now you can simply run the workflow with (assuming you have the `docker daemon` running else use `-profile conda`:
 
 ```shell
 nextflow run main.nf \
-  --input ./input/samplesheet.csv \
-  --outdir ./output \
+  --input "./input/samplesheet.csv" \
+  --outdir "./output" \
   -c nextflow.config \
   -profile docker \
-  --fasta <replace with full working directory>/input/Candidatus_Electrothrix_gigas_AW2.fasta \
-  -with-dag ./output/flowchart.svg \
+  --fasta "$BASEDIR/input/SRR2838710.fasta" \
+  -with-dag "./output/flowchart.svg" \
   -with-timeline
 ```
 
