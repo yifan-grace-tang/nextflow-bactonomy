@@ -14,7 +14,7 @@
 
 - Name: Yifan (Grace) Tang
 - GT Username: `ytang370`
-- Package Manager: `Conda 24.11.3`
+- Package Manager: `Docker 28.0.4` `Conda 24.11.3`
 OS architecture:
 ```shell
 Darwin Graces-MacBook-Pro.local 24.3.0
