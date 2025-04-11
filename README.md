@@ -46,4 +46,30 @@ nextflow run main.nf \
   -with-timeline
 ```
 
-4. This will generate all outputs for each module (process) within the `output` directory 
+4. This will generate all outputs for each module (process) within the `output` directory the final `.tree` file from `IQ-TREE` is located in `outputs/iqtree`
+
+During executation the console will log the current status as will as metrics after all processes are complete:
+
+```shell
+executor >  local (53)
+[82/139612] NFCORE_BACTONOMY:BACTONOMY:FASTQC (SRR2838701)                [100%] 5 of 5 ✔
+[96/7d9aeb] NFCORE_BACTONOMY:BACTONOMY:FASTP (SRR2838715)                 [100%] 5 of 5 ✔
+[7f/44794d] NFCORE_BACTONOMY:BACTONOMY:SPADES (SRR2838715)                [100%] 5 of 5 ✔
+[97/7e4ec8] NFCORE_BACTONOMY:BACTONOMY:PROKKA (SRR2838715)                [100%] 5 of 5 ✔
+[96/7c122f] NFCORE_BACTONOMY:BACTONOMY:UNZIP (SRR2838715.assembly.gfa.gz) [100%] 5 of 5 ✔
+[5c/047468] NFCORE_BACTONOMY:BACTONOMY:BANDAGE_IMAGE (SRR2838715)         [100%] 5 of 5 ✔
+[a9/90b3dd] NFCORE_BACTONOMY:BACTONOMY:FASTANI (SRR2838715)               [100%] 5 of 5 ✔
+[ca/9afdf1] NFCORE_BACTONOMY:BACTONOMY:BARRNAP (SRR2838715)               [100%] 5 of 5 ✔
+[eb/666b71] NFCORE_BACTONOMY:BACTONOMY:BARRNAP_TO_BED (5)                 [100%] 5 of 5 ✔
+[fe/31bf78] NFCORE_BACTONOMY:BACTONOMY:BEDTOOLS_GETFASTA (SRR2838715)     [100%] 5 of 5 ✔
+[f9/7da197] NFCORE_BACTONOMY:BACTONOMY:BED_TO_MUSCLE                      [100%] 1 of 1 ✔
+[c7/a802f3] NFCORE_BACTONOMY:BACTONOMY:MUSCLE (bedtomuscle)               [100%] 1 of 1 ✔
+[ef/50704e] NFCORE_BACTONOMY:BACTONOMY:IQTREE (bedtomuscle)               [100%] 1 of 1 ✔
+-[nf-core/bactonomy] Pipeline completed successfully-
+WARN: Task runtime metrics are not reported when using macOS without a container engine
+WARN: Graphviz is required to render the execution DAG in the given format -- See http://www.graphviz.org for more info.
+Completed at: 10-Apr-2025 22:48:39
+Duration    : 19m 4s
+CPU hours   : 3.7
+Succeeded   : 53
+```
