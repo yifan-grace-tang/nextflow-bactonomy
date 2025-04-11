@@ -75,3 +75,9 @@ Duration    : 19m 4s
 CPU hours   : 3.7
 Succeeded   : 53
 ```
+
+### Architecture
+
+<p align="center">
+  <img width="800" src="./assets/architecture.svg">
+</p>
