@@ -25,7 +25,7 @@ root:xnu-11215.81.4~3/RELEASE_ARM64_T6030 arm6
 >[!NOTE]
 > `Nextflow` requires `Bash 3.2` (or later) and `Java 17` (or later, up to `23`)
 
-In order to set-up a _minimal_ version of `Nextflow` and `nf-core` locally follow the steps listed in this [documentation](https://nf-co.re/docs/nf-core-tools/installation). The workflow detailed in this repository was tested using a dedicated `conda` environment.
+In order to set-up a _minimal_ version of `Nextflow` and `nf-core` locally follow the steps listed in this [documentation](https://nf-co.re/docs/nf-core-tools/installation). The workflow detailed in this repository was tested using a dedicated `conda` environment __and__ with a `docker` environment.
 
 ### Getting Started
 
