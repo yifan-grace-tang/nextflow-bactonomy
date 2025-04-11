@@ -46,12 +46,12 @@ In order to set-up a _minimal_ version of `Nextflow` and `nf-core` locally follo
 
 > These steps assume you have already clone this repository with `git clone https://github.com/yifan-grace-tang/nextflow-bactonomy`
 
-1. Enter the working directory of the repository with
+1. Enter the working directory of the repository:
 ```shell
-cd nextflow-bactonomy`
+cd nextflow-bactonomy
 ```
 
-3. Store your file directory information with
+3. Store your file directory information:
 ```shell
 BASEDIR=$(pwd)
 ```
