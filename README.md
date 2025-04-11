@@ -3,8 +3,9 @@
 
 > A complete and well-integrated pipeline to run bacterial taxonomy using `Nextflow` and `nf-core`
 
-- [Local Environment]()
-- [Pre-Requisites]()
+- [Local Environment](https://github.com/yifan-grace-tang/nextflow-bactonomy/blob/main/README.md#local-environment)
+- [Pre-Requisites](https://github.com/yifan-grace-tang/nextflow-bactonomy/blob/main/README.md#pre-requisites)
+- [Getting Started](https://github.com/yifan-grace-tang/nextflow-bactonomy/blob/main/README.md#getting-started)
 
 ### Local Environment
 
