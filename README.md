@@ -37,7 +37,7 @@ In order to set-up a _minimal_ version of `Nextflow` and `nf-core` locally follo
 ```shell
 echo $FINISH_THIS
 ````
-
-
-
+```shell
+nextflow run main.nf --input ./test_data_ce/samplesheet.csv --email gyftang@gmail.com --outdir ./bactonomy_output -c nextflow.config -profile conda --fasta ~/Desktop/bactonomy/test_data_ce/Candidatus_Electrothrix_gigas_AW2.fasta
+```
 
