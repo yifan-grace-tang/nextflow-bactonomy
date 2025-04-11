@@ -1,0 +1,7 @@
+﻿sample,fastq_1,fastq_2
+SRR2838710,./input/SRR2838710_1.fastq.gz,./input/SRR2838710_2.fastq.gz
+SRR2838715,./input/SRR2838715_1.fastq.gz,./input/SRR2838715_2.fastq.gz
+SRR2838709,./input/SRR2838709_1.fastq.gz,./input/SRR2838709_2.fastq.gz
+SRR2838702,./input/SRR2838702_1.fastq.gz,./input/SRR2838702_2.fastq.gz
+SRR2838701,./input/SRR2838701_1.fastq.gz,./input/SRR2838701_2.fastq.gz
+
